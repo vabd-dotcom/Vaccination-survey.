@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vaccination Awareness Bangladesh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background: #edf5ff;
+      color: #003566;
+    }
+    h1 {
+      color: #00509e;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px #fff;
+    }
+    form {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+    label {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      color: #003566;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #cce0ff;
+      background: #edf5ff;
+      color: #003566;
+      font-size: 1em;
+    }
+    input[type='radio'] {
+      width: auto;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #00509e;
+      color: #ffffff;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.2);
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003566;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vaccination Awareness Bangladesh</h1>
+
+  <form action="https://formspree.io/f/movvwmow" method="POST">
+  
+    <label>1. Have you received any COVID-19 vaccine?</label>
+    <input type="radio" name="vaccinated" value="Yes"> Yes
+    <input type="radio" name="vaccinated" value="No"> No
+    <input type="radio" name="vaccinated" value="Prefer not to say"> Prefer not to say
+
+    <label>2. Which vaccine did you receive? (If applicable)</label>
+    <select name="vaccine">
+      <option value="">Select your vaccine</option>
+      <option value="Covishield (AstraZeneca)">Covishield (AstraZeneca)</option>
+      <option value="Pfizer">Pfizer</option>
+      <option value="Moderna">Moderna</option>
+      <option value="Sinopharm">Sinopharm</option>
+      <option value="Sputnik V">Sputnik V</option>
+      <option value="Other">Other</option>
+      <option value="Not vaccinated">Not vaccinated</option>
+    </select>
+
+    <label>3. Do you believe vaccines are essential to control the spread of disease?</label>
+    <input type="radio" name="agree_vaccination" value="Strongly Agree"> Strongly Agree
+    <input type="radio" name="agree_vaccination" value="Agree"> Agree
+    <input type="radio" name="agree_vaccination" value="Neutral"> Neutral
+    <input type="radio" name="agree_vaccination" value="Disagree"> Disagree
+    <input type="radio" name="agree_vaccination" value="Strongly Disagree"> Strongly Disagree
+
+    <label>4. Did you experience side effects after vaccination?</label>
+    <input type="radio" name="side_effects" value="Yes"> Yes
+    <input type="radio" name="side_effects" value="No"> No
+    <input type="radio" name="side_effects" value="Not Vaccinated"> Not Vaccinated
+
+    <label>5. What is your main source of information about vaccines?</label>
+    <select name="info_source">
+      <option value="">Select a source</option>
+      <option value="Government campaigns">Government campaigns</option>
+      <option value="Healthcare professionals">Healthcare professionals</option>
+      <option value="Social media">Social media</option>
+      <option value="News media">News media</option>
+      <option value="Family or friends">Family or friends</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>6. Please share any comments or suggestions related to vaccination in Bangladesh</label>
+    <textarea name="comments" rows="5" cols="40" placeholder="Write your comments here..."></textarea>
+
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
